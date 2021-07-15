@@ -164,7 +164,7 @@ export default function configPlugin(pathSeporator = '/') {
       const { parts } = path;
       let last = this.api.getData();
       for (let i = 0; i < parts.length; i += 1) {
-        if (has(last.contents, parts[i])) {
+        if (true || has(last.contents, parts[i])) {
           last = last.contents[parts[i]];
         } else {
           this.api.printLine(`Not a valid path: ${toStringPath(path)}`);
