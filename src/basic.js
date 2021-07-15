@@ -74,13 +74,13 @@ export default function configPlugin(pathSeporator = '/') {
     };
 
     descriptions = {
-      cd: false,
-      ls: false,
-      rm: false,
-      mkdir: false,
-      touch: false,
-      cat: false,
-      echo: false,
+      cd: 'Change directory',
+      ls: 'List contents of the current directory',
+      rm: 'Remove a file or directory',
+      mkdir: 'Create a new directory',
+      touch: 'Touch a file',
+      cat: 'Read contents of a file',
+      echo: 'ECHOOOOOOO',
     };
 
     getPublicMethods = () => ({
